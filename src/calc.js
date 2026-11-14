@@ -21,6 +21,7 @@ export function calc(r) {
     remaining: k != null && l != null ? k - l : null,
     labRemaining: hasLab && p != null && q != null ? p - q : null,
     lec, labPct: lab, perf, status,
+    stage: r.approved ? 'Approved' : r.verified ? 'Verified' : 'Draft',
   };
 }
 

@@ -22,3 +22,13 @@ export const FINAL = [
 ];
 export const STATUSES = MID.map((b) => b[1]);
 export const colorOf = (s) => (MID.find((b) => b[1] === s) || [])[2] || '#eef0f3';
+
+// Sign-off officials (names are filled in the app's "Officials" tab; positions can be edited there too).
+export const DEFAULT_OFFICIALS = {
+  dean: { name: '', position: 'Dean, School of Computing' },
+  heads: {
+    IT: { name: '', position: 'Head, Department of Information Technology' },
+    CS: { name: '', position: 'Head, Department of Computer Science' },
+    SE: { name: '', position: 'Head, Department of Software Engineering' },
+  },
+};
